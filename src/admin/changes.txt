@@ -1,0 +1,54 @@
+
+////////////// in setstate meadia /////////////////////////
+
+/*<br/><br/>
+		<h2>Welcome admin!!! </h2>
+		<br/>*/
+		//<center>
+		/*<div className="btn-group btn-group-lg" role="group" aria-label="First group">
+    	<button type="button" className="btn btn-secondary" onClick = {props.click1}>ENTERSTOPS</button>
+    	<button type="button" className="btn btn-secondary" onClick = {props.click2}>BUSSTOPS</button>
+    	<button type="button" className="btn btn-secondary" onClick = {props.click3}>BUSDETAILS</button>
+    	<button type="button" className="btn btn-secondary" onClick = {props.click4}>UPDATE</button>
+    	<button type="button" className="btn btn-secondary" onClick = {props.click5}>DELETE</button>
+  		</div>*/
+  		//</center>
+		//<br/>
+
+////////////// setstatemedia ////////////////////
+
+
+        if(props.v1 == true || props.v2 == true || props.v3 == true || props.v4 == true ||props.v5 == true)
+    {
+      return(
+        <Mytag v1 = {props.v1} 
+        v2 = {props.v2}
+        v3 = {props.v3}
+        v4 = {props.v4}
+        v5 = {props.v5}
+        click2 = {props.click2} 
+        click1 = {props.click1} 
+        click3 = {props.click3}
+        click4 = {props.click4}
+        click5 = {props.click5}
+        back = {props.back}/>
+        );
+    }
+    else
+    {
+      return(
+        <Setstop/>
+        );
+      
+    }
+
+
+
+
+    ///////////////// signout //////////////////////
+    <button type="button" className="btn float-right btn-secondary" onClick={props.onSignOut}>Sign out</button>
+
+
+
+    ///////////////////// backbutton //////////////////////
+            <button type="button" className="btn btn-secondary" onClick = {props.back}>Back</button>
